@@ -13,6 +13,16 @@
 
 Для использования команд AuthCoreProvider используйте  config auth.ВАШAUTHID.core КОМАНДА АРГУМЕНТЫ. Список команд вы можете посмотреть, нажав на TAB
 
+AUTHID это 
+```json
+"std": { //то что здесь написано в данном случае std
+  "core": {  },
+  "isDefault": true,
+  "displayName": "Default"
+}
+```
+В данном случае команды будут выклядеть так: config auth.std.core КОМАНДА АРГУМЕНТЫ
+
 ## Конфигурация PasswordVerifier
 
 Для настройки большинства способов авторизации через БД вам необходимо указать passwordVerifier, соответствующий вашей CMS на сайте. (секцию passwordVerifier можно будет встретить при конфигурировании метода [mysql](#метод-mysql) либо [postgresql](#метод-postgresql))
